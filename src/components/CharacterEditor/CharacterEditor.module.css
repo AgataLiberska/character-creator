@@ -1,5 +1,5 @@
 .characterEditor {
-  padding-top: 128px;
+  padding-top: 48px;
   padding-bottom: 64px;
 }
 
@@ -9,7 +9,7 @@
 
 .header {
   padding-bottom: 64px;
-  width: 65%;
+  text-align:center;
 }
 
 .title {
@@ -26,22 +26,51 @@
 }
 
 .characterWrapper {
-  min-height: 500px;
-  position:fixed;
-  top:20%;
-  left: 60%;
-  bottom: 5%;
+  height: 90vh;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: center;
 }
 
 .controlColumn {
-  width: 50%;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: row;
 }
 
-.greyBackground {
-  background-color: hsl(195deg, 20%, 86%);
-  height: 40vh;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+@media (min-width: 992px) {
+  .characterEditor {
+    padding-top: 128px;
+    padding-bottom: 64px;
+  }
+
+  .characterWrapper {
+    min-height: 500px;
+    position:fixed;
+    top:20%;
+    left: 60%;
+    bottom: 5%;
+  }
+
+  .controlColumn {
+    width: 50%;
+    position: relative;
+    bottom: initial;
+    display: block;
+  }
+
+  .greyBackground {
+    background-color: hsl(195deg, 20%, 86%);
+    height: 40vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
+
+
+
+
